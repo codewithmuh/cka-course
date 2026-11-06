@@ -1,0 +1,34 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Terraform
+*.tfstate
+*.tfstate.backup
+.terraform/
+*.tfvars
+
+# Kubernetes
+kubeconfig
+*.kubeconfig
+
+# Temporary
+/tmp/
+*.tmp
+*.log
+
+# etcd snapshots (may contain cluster secrets)
+*.db
+!labs/*.yaml

@@ -1,0 +1,64 @@
+name: 🐛 Bug Report
+description: Report a bug in the CKA course content, lab scripts, or tasks
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug! Please fill out the form below.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the bug
+      description: A clear and concise description of what the bug is.
+      placeholder: Tell us what happened...
+    validations:
+      required: true
+
+  - type: input
+    id: lesson
+    attributes:
+      label: Affected lesson
+      description: Which lesson or module is affected?
+      placeholder: "e.g., Module 1 — etcd backup and restore"
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Steps to reproduce the behavior.
+      placeholder: |
+        1. Run lab-up.sh
+        2. Go to lesson...
+        3. Execute command...
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What you expected to happen.
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Please provide your environment details.
+      placeholder: |
+        - OS: macOS 15 / Ubuntu 24.04 / Windows 11 + WSL2
+        - Docker version: 27.x
+        - Kind version: 0.25.x
+        - kubectl version: 1.37.x
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs
+      description: Paste any relevant output from `lab-check.sh` or error messages.
+      render: shell

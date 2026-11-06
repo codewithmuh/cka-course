@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Discussions
+    url: https://github.com/codewithmuh/cka-course/discussions
+    about: Ask questions, share tips, or discuss CKA prep strategies
+  - name: 📖 Course
+    url: https://codewithmuh.com/cka
+    about: Access the full interactive course
+  - name: 📺 YouTube
+    url: https://youtube.com/@codewithmuh
+    about: Video tutorials and walkthroughs
