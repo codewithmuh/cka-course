@@ -81,7 +81,9 @@ graph TD
 
 ## Full Curriculum
 
-### Module 0 — Start Here
+> 📖 **All lessons are available as markdown** in the [`modules/`](modules/) directory — read the full course right here on GitHub.
+
+### Module 0 — [Start Here](modules/00-start-here/)
 
 | # | Lesson | Description |
 |---|--------|-------------|
@@ -90,7 +92,7 @@ graph TD
 | 0.3 | kubectl fluency | Aliases, short names, dry-run patterns, and imperative shortcuts |
 | 0.4 | Exam-day habits: vim, docs, time | Editor config, documentation navigation, time management |
 
-### Module 1 — Cluster Architecture, Installation & Configuration (25%)
+### Module 1 — [Cluster Architecture, Installation & Configuration](modules/01-architecture/) (25%)
 
 | # | Lesson | Description |
 |---|--------|-------------|
@@ -106,7 +108,7 @@ graph TD
 | 1.10 | CRDs and operators | CustomResourceDefinitions, controller pattern, operator installation |
 | 1.11 | CNI, CSI and CRI | Container runtime, network, and storage extension interfaces |
 
-### Module 2 — Workloads & Scheduling (15%)
+### Module 2 — [Workloads & Scheduling](modules/02-workloads/) (15%)
 
 | # | Lesson | Description |
 |---|--------|-------------|
@@ -120,7 +122,7 @@ graph TD
 | 2.8 | Autoscaling with the HPA | HorizontalPodAutoscaler, metrics-based scaling |
 | 2.9 | Pod admission, Pod Security and priority | PodSecurity admission, PriorityClasses, preemption |
 
-### Module 3 — Services & Networking (20%)
+### Module 3 — [Services & Networking](modules/03-networking/) (20%)
 
 | # | Lesson | Description |
 |---|--------|-------------|
@@ -131,7 +133,7 @@ graph TD
 | 3.5 | The Gateway API | HTTPRoute, Gateway, GatewayClass |
 | 3.6 | NetworkPolicies | Ingress/egress rules, pod selectors, namespace selectors |
 
-### Module 4 — Storage (10%)
+### Module 4 — [Storage](modules/04-storage/) (10%)
 
 | # | Lesson | Description |
 |---|--------|-------------|
@@ -140,7 +142,7 @@ graph TD
 | 4.3 | StorageClasses and dynamic provisioning | Default StorageClass, parameters, volume binding |
 | 4.4 | StatefulSets and volumeClaimTemplates | Stable network identity, ordered deployment, persistent storage |
 
-### Module 5 — Troubleshooting (30%)
+### Module 5 — [Troubleshooting](modules/05-troubleshooting/) (30%)
 
 | # | Lesson | Description |
 |---|--------|-------------|
@@ -153,7 +155,7 @@ graph TD
 | 5.7 | Monitoring resource usage | `kubectl top`, metrics-server, resource pressure |
 | 5.8 | kubectl debug, ephemeral containers and crictl | Debug containers, node debugging, crictl inspection |
 
-### Module 6 — Exam Preparation
+### Module 6 — [Exam Preparation](modules/06-exam-preparation/)
 
 | # | Lesson | Description |
 |---|--------|-------------|
@@ -270,27 +272,37 @@ graph LR
 
 ```
 cka-course/
+├── modules/
+│   ├── 00-start-here/              # Module 0: 4 lessons
+│   ├── 01-architecture/            # Module 1: 11 lessons (25%)
+│   ├── 02-workloads/               # Module 2: 9 lessons (15%)
+│   ├── 03-networking/              # Module 3: 6 lessons (20%)
+│   ├── 04-storage/                 # Module 4: 4 lessons (10%)
+│   ├── 05-troubleshooting/         # Module 5: 8 lessons (30%)
+│   ├── 06-exam-preparation/        # Module 6: 2 lessons + 3 mock exams
+│   │   └── mocks/                  # Lightning lab + Mock 1 + Mock 2
+│   └── glossary.md                 # 81 key terms
 ├── labs/
-│   ├── kind-config.yaml          # Kind cluster configuration
-│   ├── lab-up.sh                 # Create the lab cluster
-│   ├── lab-check.sh              # Verify lab health
-│   ├── lab-reset.sh              # Reset lab (delete + recreate)
-│   └── lab-down.sh               # Tear down the lab
+│   ├── kind-config.yaml            # Kind cluster configuration
+│   ├── lab-up.sh                   # Create the lab cluster
+│   ├── lab-check.sh                # Verify lab health
+│   ├── lab-reset.sh                # Reset lab (delete + recreate)
+│   └── lab-down.sh                 # Tear down the lab
 ├── cheatsheets/
-│   └── cka-cheatsheet.md         # Exam-day quick reference
+│   └── cka-cheatsheet.md           # Exam-day quick reference
 ├── .github/
 │   ├── workflows/
-│   │   └── security.yml          # Gitleaks secret scanning
+│   │   └── security.yml            # Gitleaks secret scanning
 │   ├── ISSUE_TEMPLATE/
-│   │   ├── bug_report.yml        # Bug report template
-│   │   ├── feature_request.yml   # Feature request template
-│   │   └── config.yml            # Issue template chooser
-│   └── PULL_REQUEST_TEMPLATE.md  # PR template
+│   │   ├── bug_report.yml          # Bug report template
+│   │   ├── feature_request.yml     # Feature request template
+│   │   └── config.yml              # Issue template chooser
+│   └── PULL_REQUEST_TEMPLATE.md    # PR template
 ├── CODE_OF_CONDUCT.md
 ├── CONTRIBUTING.md
 ├── SECURITY.md
 ├── ACCESSIBILITY.md
-├── LICENSE                       # MIT License
+├── LICENSE                         # MIT License
 ├── .gitignore
 └── README.md
 ```
